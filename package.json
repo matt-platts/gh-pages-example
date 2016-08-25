@@ -21,7 +21,7 @@
   },
   "scripts": {
     "cupcakes": "npm run clean && babel src/js/hello.js --out-file build/hello.js && node-sass src/styles/main.scss build/main.css",
-    "watch" : "watch \"npm run cupcakes -- src/**/\"",
+    "watch" : "watch \"npm run cupcakes src/**/\"",
     "clean": "rm -rf build/ && mkdir build"
   }
 }
