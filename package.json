@@ -18,5 +18,10 @@
   "devDependencies": {
     "browser-sync": "^2.14.0",
     "watch": "^0.19.1"
+  },
+  "scripts": {
+    "cupcakes": "npm run clean && babel src/js/hello.js --out-file build/hello.js && node-sass src/styles/main.scss build/main.css",
+    "watch" : "watch \"npm run cupcakes -- src/**/\"",
+    "clean": "rm -rf build/ && mkdir build"
   }
 }
